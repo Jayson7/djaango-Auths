@@ -26,8 +26,8 @@
     <div class="screen-reg">
       <div class="wrappers">
         <div class="logos-img"></div>
-        <div class="logos">Login</div>
-        <form method="post" class="my-2">
+        <div class="logos">Register</div>
+        <form method="post" class="form-row my-2">
           {% csrf_token %} {{form | crispy }}
 
           <button type="submit" class="btn my-2 btn-primary">Submit</button>
