@@ -28,9 +28,20 @@
         <div class="logos-img"></div>
         <div class="logos">Register</div>
         <form method="post" class="form-row my-2">
-          {% csrf_token %} {{form | crispy }}
+          {% csrf_token %}
 
-          <button type="submit" class="btn my-2 btn-primary">Submit</button>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn my-2 btn-primary">Register</button>
         </form>
       </div>
     </div>
