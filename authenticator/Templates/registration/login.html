@@ -19,12 +19,12 @@
         <div class="wrappers">
             <div class="logos-img"></div>
             <div class="logos">Login</div>
-            <form method="post">
+            <form method="post" class="my-2">
                 {% csrf_token %}
                 <div class="form-group">{{form.username | as_crispy_field}}</div>
                 <div class="form-group">{{form.password | as_crispy_field}}</div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn my-2 btn-primary">Submit</button>
             </form>
         </div>
     </div>
