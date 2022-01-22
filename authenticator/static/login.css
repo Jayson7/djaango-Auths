@@ -1,0 +1,30 @@
+.wrappers {
+    background-color: rgb(82, 165, 165);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.screen-login {
+    width: 100%;
+    height: 98vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    font-size: 1.7rem;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.logos-img {
+    width: 120px;
+    height: 120px;
+    background-color: aliceblue;
+}

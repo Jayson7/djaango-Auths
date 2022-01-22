@@ -15,20 +15,18 @@
 </head>
 
 <body>
-    <div class="wrappers">
-        <form method="post">
-            {% csrf_token %}
-            <div class="form-col">
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.username|as_crispy_field }}
-                </div>
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.password|as_crispy_field }}
-                </div>
-            </div>
+    <div class="screen-login">
+        <div class="wrappers">
+            <div class="logos-img"></div>
+            <div class="logos">Login</div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">{{form.username | as_crispy_field}}</div>
+                <div class="form-group">{{form.password | as_crispy_field}}</div>
 
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 
