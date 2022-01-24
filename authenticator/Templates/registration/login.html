@@ -1,4 +1,4 @@
-{% load static %} {% load crispy_forms_tags %}
+{% load static %} {% load crispy_forms_tags %} {% load account socialaccount %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,9 +37,13 @@
             >
               Register</a
             >
-          </div>
+            <div class="bg-dark">
+              <a href=""> <i class="fa fa-google" aria-hidden="true"></i> </a>
+                </div>
+        </div>
         </form>
-      </div>
     </div>
-  </body>
+    </div>
+</body>
+
 </html>
