@@ -4,10 +4,13 @@ from .forms import SignUpForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+
+
 @login_required
 def Homepage(request):
     
     return render(request, 'index.html')
+
 
 
 def  register(request):
