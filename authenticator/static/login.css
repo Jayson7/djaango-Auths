@@ -1,6 +1,6 @@
 .wrappers {
     background-color: rgb(28, 63, 63);
-    width: auto;
+    width: 600px;
     display: flex;
     height: auto;
     flex-direction: column;
@@ -38,4 +38,8 @@
     .wrappers {
         width: 100vw;
     }
+}
+
+form {
+    padding: 50px;
 }
